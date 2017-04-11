@@ -30,9 +30,9 @@
  btn.onclick = write;
 
  //给页面绑定键盘事件
- document.onkeyup = function (e) {
-   e = event||window.event;
-   if (e.keyCode == 13) {
+ document.onkeyup = function (event) {
+   event = event||window.event;
+   if (event.keyCode == 13) {
      write ();
    }
  }
